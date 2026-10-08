@@ -56,8 +56,8 @@ void M5StackPBHUBComponent::digital_write(uint8_t pin, bool value) {
   }else if(pin==1){
    portHub->hub_d_wire_value_A(HUB_ADDR[0],val);
    return ;
-  }/*
-if (pin==10){
+  }
+  if (pin==10){
     portHub->hub_d_wire_value_B(HUB_ADDR[1],val);
     return ;
   }else if(pin==11){
